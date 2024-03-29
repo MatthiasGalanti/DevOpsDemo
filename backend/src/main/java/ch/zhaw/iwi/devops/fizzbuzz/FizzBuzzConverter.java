@@ -3,11 +3,15 @@ package ch.zhaw.iwi.devops.fizzbuzz;
 public class FizzBuzzConverter {
 
     public String convert(int i) {
-        if (i % 3 == 0 && i % 7 == 0) {
+        boolean isMultipleOf3 = i % 3 == 0;
+        boolean isMultipleOf7 = i % 7 == 0;
+
+
+        if (isMultipleOf3 && isMultipleOf7) {
             return "FizzBuzz";
-        } else if (i % 3 == 0) {
+        } else if (isMultipleOf3) {
             return "Fizz";
-        } else if (i % 7 == 0) {
+        } else if (isMultipleOf7) {
             return "Buzz";
         }
         return String.valueOf(i);
