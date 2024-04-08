@@ -48,5 +48,9 @@ public class WardrobeCombiner {
 
         scanner.close();
     }
+
+    public class DemoClass {
+        // This class does nothing
+    }
 }
 
