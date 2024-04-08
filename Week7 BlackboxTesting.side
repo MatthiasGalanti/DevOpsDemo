@@ -1,0 +1,74 @@
+{
+  "id": "6e9e4673-ff47-4f3d-ad8e-3bd6036baa75",
+  "version": "2.0",
+  "name": "Week7 BlackboxTesting",
+  "url": "http://localhost:9000",
+  "tests": [{
+    "id": "5a23118c-44de-4fa5-b65f-752e3f61cb42",
+    "name": "Test_1",
+    "commands": [{
+      "id": "1200ac17-cdf1-410f-9458-d42eeb5b853b",
+      "comment": "",
+      "command": "open",
+      "target": "/project",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b0f84e0f-3c87-485f-b741-905b41d1e440",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1050x652",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6d24314f-2448-4742-9115-3c6335fe0190",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Projects",
+      "targets": [
+        ["linkText=Projects", "linkText"],
+        ["css=.css-1d6oiat > .css-oqoioi:nth-child(1) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Projects')]", "xpath:link"],
+        ["xpath=//div[@id='global-navigation']/div/nav/ul/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/projects')]", "xpath:href"],
+        ["xpath=//li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Projects')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "fbb76135-235f-43b1-b2f3-3b2bd08cb27e",
+      "comment": "",
+      "command": "click",
+      "target": "linkText='DevOpsDemo-Frontend'",
+      "targets": [
+        ["linkText='DevOpsDemo-Frontend'", "linkText"],
+        ["css=div:nth-child(2) > .sw-h-full > .it_project_card .css-102n57e", "css:finder"],
+        ["xpath=//div[@id='projects-page']/div/div/div[2]/div[2]/div/div/div/div[2]/div/div/div/div/h1/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/dashboard?id=DevOpsDemo-Frontend')]", "xpath:href"],
+        ["xpath=//div[2]/div/div/div/div/h1/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c5196949-d2bb-4ef5-8024-06c9f2e1187c",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.js-project-link > .css-qgr5mh",
+      "targets": [
+        ["css=.js-project-link > .css-qgr5mh", "css:finder"],
+        ["xpath=//nav[@id='context-navigation']/div/div/div/div/a/span", "xpath:idRelative"],
+        ["xpath=//a/span", "xpath:position"]
+      ],
+      "value": "'DevOpsDemo-Frontend'"
+    }]
+  }],
+  "suites": [{
+    "id": "f59b605a-e4cb-4e70-9bd2-16c05cce98ef",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["5a23118c-44de-4fa5-b65f-752e3f61cb42"]
+  }],
+  "urls": ["http://localhost:9000/"],
+  "plugins": []
+}

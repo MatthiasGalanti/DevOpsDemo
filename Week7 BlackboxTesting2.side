@@ -1,0 +1,74 @@
+{
+  "id": "a3ab996e-3458-4870-974c-5bd60b7216fd",
+  "version": "2.0",
+  "name": "Week7 BlackboxTesting2",
+  "url": "http://localhost:9000",
+  "tests": [{
+    "id": "86a7c4b1-86b3-4d8d-95e0-c506c18e5d6a",
+    "name": "Test_2",
+    "commands": [{
+      "id": "688828ad-d1a0-4cce-9932-b0d0e577f5bc",
+      "comment": "",
+      "command": "open",
+      "target": "/projects",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e4e94ae6-110b-49c7-a4b7-9ea379524ca2",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1050x652",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a1c2c1a3-2856-4478-8976-caf763c92c1a",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,0)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b4f73b5f-7646-4751-8f8b-ffd9df493064",
+      "comment": "",
+      "command": "click",
+      "target": "linkText='DevOpsDemo-WardrobeCombinerBackend'",
+      "targets": [
+        ["linkText='DevOpsDemo-WardrobeCombinerBackend'", "linkText"],
+        ["css=div:nth-child(3) > .sw-h-full .css-102n57e", "css:finder"],
+        ["xpath=//div[@id='projects-page']/div/div/div[2]/div[2]/div/div/div/div[3]/div/div/div/div/h1/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/dashboard?id=DevOpsDemo-WardrobeCombinerBackend')]", "xpath:href"],
+        ["xpath=//div[3]/div/div/div/div/h1/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c9b0c17b-19ac-4809-bde3-e5af6160dccc",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,0)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b058c695-1c1a-49cd-9cf4-4f3ae90830b2",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.sw-heading-lg",
+      "targets": [
+        ["css=.sw-heading-lg", "css:finder"],
+        ["xpath=//div[@id='container']/div/div[3]/main/div[2]/div/div/div/div/div/div[2]/div/div/div[2]/div[2]/span", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Failed')]", "xpath:innerText"]
+      ],
+      "value": "Failed"
+    }]
+  }],
+  "suites": [{
+    "id": "c01d8445-3e8d-49b1-9140-c4ee13d38ec5",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["86a7c4b1-86b3-4d8d-95e0-c506c18e5d6a"]
+  }],
+  "urls": ["http://localhost:9000/"],
+  "plugins": []
+}
