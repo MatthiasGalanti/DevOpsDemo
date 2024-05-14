@@ -1,12 +1,14 @@
 package ch.zhaw.iwi.devops.TicTacToe;
-import org.junit.Before;
-import org.junit.Test;
-import static org.junit.Assert.*;
+
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+
+import static org.junit.jupiter.api.Assertions.*;
 
 public class TicTacToeTest {
     private TicTacToe game;
 
-    @Before
+    @BeforeEach
     public void setUp() {
         game = new TicTacToe();
     }
