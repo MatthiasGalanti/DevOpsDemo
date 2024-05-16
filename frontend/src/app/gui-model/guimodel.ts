@@ -3,7 +3,7 @@ export class GuiModel {
 
     private _guiModel = {
         "application": {
-            "title": "DevOpsDemo FS2024_Matthias Galanti",
+            "title": "DevOpsDemo FS2024_Matthias Galanti - This is for Demo",
             "formList": [
                 {
                     "id": "OwnUserForm",
